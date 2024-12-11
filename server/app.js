@@ -7,8 +7,6 @@ const authRouter = require('./routes/authRoute')
 const contactRouter = require('./routes/contactRoute')
 const path = require('path')
 
-console.log(process.env.MONGO_URI);
-
 
 const app = express()
 mongoose.connect(
@@ -22,7 +20,7 @@ mongoose.connect(
 })
 
 if(process.env.NODE_ENV == "production"){
-    app.use(express.static(path.join(__dirname, "/client/dist")))
+    app.use(express.static(path.join(__dirname, "..", "/client/dist")))
     app.get("*", (req, res) =>{
         res.sendFile(path.join(__dirname, "/client/dist/index.html"))
     })

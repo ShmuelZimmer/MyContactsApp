@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.home{
+    background-image: url('../assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.home h1{
+    color: white;
+    font-size: 100px;
+
+}
+.container{
+    margin: auto 0;
+}
+.login-page{
+    background-image: url(../assets/images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.login-page h1{
+    color: white;
+    font-size: 100px;
+}
+
+.register-page{
+    background-image: url(../assets/images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    filter: brightness(1.2);
+}
+.register-page h1{
+    color: white;
+    font-size: 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    height: 100vh;
+}
+.login-page .title h2{
+    margin-top: -50px;
+}
+.login-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.login-div input{
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    gap: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+.login-div input::placeholder{
+    color: rgb(255, 255, 255);
+}
+.login-div form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.login-div button{
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255,255,);
+    cursor: pointer;
+}
+.login-div button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.register-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.register-div input{
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    gap: 20px;
+    border: none;
+    
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+.register-div input::placeholder{
+    color: white;
+}
+.register-div form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.register-div button{
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255,255,);
+    cursor: pointer;
+}
+.register-div button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.title h1 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    
+}
+.login-page .title h2{
+    color: white;
+    font-size: 50px;
+}
+.nav-bar{
+    color: white;
+    display: flex;
+    align-items: center; /* Aligns all items vertically */
+    justify-content: space-between; /* Spreads content across the navbar */
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 20px; /* Adds padding to the sides */
+    box-sizing: border-box;
+}
+.logo-div{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    gap: 20px; 
+    
+}
+.logo-div p{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color: darkblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-in{
+    width: 200px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 200px;
+    
+
+}
+.user-in p{
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+.user-in button{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.logo-img{
+    width: 180px;
+    margin: 0 auto;
+    margin-left: 0;
+    
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 90px;
+    width: 300px;
+}
+.contact-list h3{
+    margin-top: -8px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+}
+.create-contact input{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255, 0.5) ;
+     border-radius: 10px;
+     border: none;
+    
+}
+.create-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page{
+    background-image: url(../assets/images/bg3.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Nunito Sans', sans-serif;
+}
+.show-contacts {
+    max-height: 400px; /* Set a fixed height for the contact list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 90%; /* Adjust width as necessary */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: background for better readability */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+.show-contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.show-contacts li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    
+}
+.add-btn {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.add-img{
+    width: 50px;
+}
+.del-btn{
+     border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.del-img{
+    margin-top: 5px;
+    width: 40px;
+}
+.add-btn:hover {
+  background-color: #ffffff;
+}
+
+.show-contacts li:last-child {
+    border-bottom: none;
+}
+.show-contacts li p {
+    margin: 2px 0; /* Reduce the vertical margin */
+    padding: 0; /* Remove any extra padding */
+}
+
+
+
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 10px; /* Height for horizontal scrollbars */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #4a90e2, #9c64ce); /* Gradient color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #f1f1f1; /* Border around the thumb */
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #3a78d8, #7a0edc); /* Slightly darker gradient */
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar-thumb:horizontal {
+    background: linear-gradient(45deg, #4a90e2, #9013fe); /* Match the vertical scrollbar */
+}
+.pers,
+.num {
+    width: 40px; /* Fixed width for consistent positioning */
+    display: inline-block; /* Keeps icons aligned horizontally with text */
+    text-align: center; /* Centers the icon within its box */
+    margin-right: 10px; /* Adds space between the icon and text */
+    flex-shrink: 0; /* Prevents the icons from resizing */
+}
+
+.details-div {
+    display: flex;
+    flex-direction: column; /* Stacks rows vertically */
+    align-items: flex-start; /* Aligns all content to the left */
+}
+
+.details-div p {
+    display: flex; /* Creates a row for each line of content */
+    align-items: center; /* Vertically centers the icon and text */
+    gap: 10px; /* Adds uniform spacing between icon and text */
+}
+
+.search-input{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5) ;
+     border-radius: 10px;
+     border: none;
+     margin-top: -10px;
+}
+.search-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-home button{
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

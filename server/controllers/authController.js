@@ -18,7 +18,7 @@ exports.register = async (req, res) => {
     await newuser.save();
     res.status(200).json(newuser);
   } catch (err) {
-    res.status(500).json({ error: "Registration error" });
+    res.status(500).json({ error: err.message });
   }
 };
 

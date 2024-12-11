@@ -18,7 +18,7 @@ const Register = () => {
       nav('/')
     
     }catch(err){
-      console.log(err.response.data.error);
+      console.log(err.response);
       alert("Registration Error")
     }
 

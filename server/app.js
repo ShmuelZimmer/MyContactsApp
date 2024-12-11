@@ -5,6 +5,9 @@ const dotenv = require('dotenv')
 dotenv.config()
 const authRouter = require('./routes/authRoute')
 const contactRouter = require('./routes/contactRoute')
+const path = require('path')
+
+console.log(process.env.MONGO_URI);
 
 
 const app = express()
@@ -17,6 +20,13 @@ mongoose.connect(
 .catch((err)=>{
     console.log(err)
 })
+
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static(path.join(__dirname, "/client/dist")))
+    app.get("*", (req, res) =>{
+        res.sendFile(path.join(__dirname, "/client/dist/index.html"))
+    })
+}
 
 app.use(cors())
 app.use(express.json())
